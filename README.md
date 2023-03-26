@@ -2,6 +2,8 @@
 
 DASHBOARD : http://35.180.111.251:8050/
 
+le dashboard 
+
 
 
 
@@ -10,116 +12,177 @@ DASHBOARD : http://35.180.111.251:8050/
 
 #question 1
 ```
-[ec2-user@ip-172-31-44-146 ~]$ cd /
+[ec2-user@ip-172-31-44-146 ~]$ pwd
 ```
 
+#question 2
 
 ```
-[ec2-user@ip-172-31-44-146 /]$ ls
+[ec2-user@ip-172-31-44-146 ~]$ ls
 bin  boot  dev  etc  home  lib  lib64  local  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 ```
 
+#question 3
 
 ```
-[ec2-user@ip-172-31-44-146 /]$ pwd
+[ec2-user@ip-172-31-44-146 ~]$ pwd
 /
 ```
 
+#question 4
+
 ```
-[ec2-user@ip-172-31-44-146 /]$ mkdir test
+[ec2-user@ip-172-31-44-146 ~]$ mkdir test
 mkdir: cannot create directory ‘test’: Permission denied
 ```
 
-
+#question 4
 ```
-[ec2-user@ip-172-31-44-146 /]$ mkdir test
+[ec2-user@ip-172-31-44-146 ~]$ mkdir test
 mkdir: cannot create directory ‘test’: Permission denied
 ```
 
-```
-[ec2-user@ip-172-31-44-146 /]$ cd /home
-```
-
-```
-[ec2-user@ip-172-31-44-146 home]$ cd ~
-```
+#question 5
 
 ```
 [ec2-user@ip-172-31-44-146 ~]$ cd ..
 ```
 
-```
-[ec2-user@ip-172-31-44-146 home]$ cd ..
-```
+
+
+
+#question 6
 
 ```
-[ec2-user@ip-172-31-44-146 /]$ cd ~
+[ec2-user@ip-172-31-44-146 ~]$ cd ..
 ```
 
+#question 7
+
 ```
-[ec2-user@ip-172-31-44-146 ~]$ mkdir test
+[ec2-user@ip-172-31-44-146 home]$ pwd
 ```
+
+#question 8
+
+```
+[ec2-user@ip-172-31-44-146 /]$ cd ..
+```
+
+#question 9
+
+```
+[ec2-user@ip-172-31-44-146 ~]$ cd
+[ec2-user@ip-172-31-44-146 ~]$ pwd
+```
+
+#question 10
 
 ```
 [ec2-user@ip-172-31-44-146 ~]$ cd test
 ```
+
+#question 11
 
 ```
 [ec2-user@ip-172-31-44-146 test]$ pwd 
 /home/ec2-user/test
 ```
 
-#Exo 2 
+#question 11
 
 ```
-[ec2-user@ip-172-31-44-146 ~]$ touch alexis_bogroff.txt
+[ec2-user@ip-172-31-44-146 test]$ pwd 
+/home/ec2-user/test
+
+```
+
+#Exo 2 
+
+#question 1
+```
+[ec2-user@ip-172-31-44-146 test]$cd
+```
+
+#question 2
+```
+[ec2-user@ip-172-31-44-146 ~]$cd
+/home/ec2-user
+```
+
+
+#question 3
+```
+[ec2-user@ip-172-31-44-146 ~]$ mkdir linux_ex_1
+```
+
+#question 4
+```
+[ec2-user@ip-172-31-44-146 ~]$ cd linux_ex_1
+[ec2-user@ip-172-31-44-146 linux_ex_1]$
+
+```
+
+#question 5
+
+```
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ touch syphax_benhamouche.txt
 You have new mail in /var/spool/mail/ec2-user
 ```
 
+#question 6
 ```
-[ec2-user@ip-172-31-44-146 ~]$ mv alexis_bogroff.txt notes/
-mv: cannot move ‘alexis_bogroff.txt’ to ‘notes/’: Not a directory
-```
-
-```
-[ec2-user@ip-172-31-44-146 ~]$ mkdir notes
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ mkdir notes
 ```
 
+#question 7
 ```
-[ec2-user@ip-172-31-44-146 ~]$ mv alexis_bogroff.txt notes/
-```
-
-```
-[ec2-user@ip-172-31-44-146 ~]$ mv notes/alexis_bogroff.txt notes/alexis_bogroff_[2023].txt
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ mv syphax_benhamouche.txt /home/ec2-user/linux_ex_1/notes
 ```
 
+#question 8
 ```
-[ec2-user@ip-172-31-44-146 ~]$ cp -r notes notes_2022
+[ec2-user@ip-172-31-44-146 linux_ex_1]$cd notes
+[ec2-user@ip-172-31-44-146 notes]$mv syphax_benhamouche.txt syphax_benhamouche_2023.txt
 ```
 
+#question 9
 ```
-[ec2-user@ip-172-31-44-146 ~]$ rm -rv notes
-removed ‘notes/alexis_bogroff_[2023].txt’
+[ec2-user@ip-172-31-44-146 notes]$ cd ..
+[ec2-user@ip-172-31-44-146 linux_ex_1]$cp -R notes notes_2022
+```
 
+#question 10
+```
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ rm -rv notes
+removed ‘syphax_benhamouche_2023.txt'
 removed directory: ‘notes’
 ```
 
 #Exercice 3
-#Question1
 
+#Question1
 ```
-[ec2-user@ip-172-31-44-146 ~]$ touch ~/linux_ex_1/script_1.sh
-[ec2-user@ip-172-31-44-146 ~]$ nano ~/linux_ex_1/script_1.sh
-[ec2-user@ip-172-31-44-146 ~]$ cat ~/linux_ex_1/script_1.sh
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ nano script_1.sh
 echo "Script running please wait ..."
 echo "Done."
 ```
 
-#Question 2
+#Question 3
+```
+Ctrl + x, Y , Enter
+```
+
+#Question 4 
 
 ```
-[ec2-user@ip-172-31-44-146 ~]$ chmod +x ~/linux_ex_1/script_1.sh
-[ec2-user@ip-172-31-44-146 ~]$ ~/linux_ex_1/script_1.sh
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ cat script_1.sh
+```
+
+#Question 5
+```
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ chmod +x script_1.sh
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ ./script_1.sh
 Script running please wait ...
 Done.
 ```
@@ -127,241 +190,260 @@ Done.
 
 #exo 4.1
 
+#Question1
 ```
-[ec2-user@ip-172-31-44-146 ~]$ cat ~/linux_ex_1/credentials
-hello ^^ 
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ nano credentials
+"wrote :'hello ^^'" 
 ```
-
+#b
 ```
-[ec2-user@ip-172-31-44-146 ~]$ ls -l ~/linux_ex_1/credentials
--r--r--r-- 1 ec2-user ec2-user 10 Mar 23 21:26 /home/ec2-user/linux_ex_1/credentials
-```
-
-```
-[ec2-user@ip-172-31-44-146 ~]$ chmod 444 ~/linux_ex_1/credentials
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ cat credentials
 ```
 
-```
-[ec2-user@ip-172-31-44-146 ~]$ ls -l ~/linux_ex_1/credentials
--r--r--r-- 1 ec2-user ec2-user 10 Mar 23 21:26 /home/ec2-user/linux_ex_1/credentials
-```
+#c
 
 ```
-[ec2-user@ip-172-31-44-146 ~]$ nano ~/linux_ex_1/credentials
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ ls -l credentials
+-rw-rw-r-- 1 ec2-user ec2-user 8 Feb 19 21:26 credentials
 ```
 
+#Question2a
 ```
-[ec2-user@ip-172-31-44-146 ~]$ chmod 666 ~/linux_ex_1/credentials
-```
-
-```
-[ec2-user@ip-172-31-44-146 ~]$ ls -l ~/linux_ex_1/credentials
--rw-rw-rw- 1 ec2-user ec2-user 10 Mar 23 21:26 /home/ec2-user/linux_ex_1/credentials
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ chmod a=r credentials
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ ls -l credentials
+-r--r--r-- 1 ec2-user ec2-user 8 Feb 19 21:26 credentials
 ```
 
+#Question2b
 ```
-[ec2-user@ip-172-31-44-146 ~]$ nano ~/linux_ex_1/credentials
-```
-
-```
-[ec2-user@ip-172-31-44-146 ~]$ cat ~/linux_ex_1/credentials
-hello ^^ 
-```
-
-```
-[ec2-user@ip-172-31-44-146 ~]$ chmod u+x ~/linux_ex_1/credentials
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ nano credentials
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ cat credentials
+hello^^
+hello hello^^
 ```
 
+#Question3a
 ```
-[ec2-user@ip-172-31-44-146 ~]$ ls -l ~/linux_ex_1/credentials
--rwxrw-rw- 1 ec2-user ec2-user 10 Mar 23 21:26 /home/ec2-user/linux_ex_1/credentials
-```
-
-```
-[ec2-user@ip-172-31-44-146 ~]$ chmod o-r ~/linux_ex_1/credentials
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ chmod a+rw credentials
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ ls -l credentials
+-rw-rw-rw- 1 ec2-user ec2-user 8 Feb 19 21:30 credentials
 ```
 
+#Question3b
 ```
-[ec2-user@ip-172-31-44-146 ~]$ ls -l ~/linux_ex_1/credentials
--rwxrw--w- 1 ec2-user ec2-user 10 Mar 23 21:26 /home/ec2-user/linux_ex_1/credentials
-```
-
-```
-[ec2-user@ip-172-31-44-146 ~]$ chmod 777 ~/linux_ex_1/credentials
-```
-
-```
-[ec2-user@ip-172-31-44-146 ~]$ ls -l ~/linux_ex_1/credentials
--rwxrwxrwx 1 ec2-user ec2-user 10 Mar 23 21:26 /home/ec2-user/linux_ex_1/credentials
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ nano credentials
 ```
 
 
-#ex 4.2
+#Question3c
+```
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ cat credentials
+```
 
 ```
-[ec2-user@ip-172-31-44-146 ~]$ cd /
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ chmod u+x credentials
+[ec2-user@ip-172-31-44-146 linux_ex_1]$ ls -l credentials
+
 ```
 
+
+
+#Execice 4.2
+
+#question1
+```
+[ec2-user@ip-172-31-44-146 linux_ex_1]$  cd /
+```
+
+#question2a
 ```
 [ec2-user@ip-172-31-44-146 /]$ sudo nano .private_file
 You have new mail in /var/spool/mail/ec2-user
 ```
 
-```
-[ec2-user@ip-172-31-44-146 /]$ sudo cat .private_file
-info bonjour
-```
-
-```
-[ec2-user@ip-172-31-44-146 /]$ ls -la
-total 20
-dr-xr-xr-x  18 root root  278 Mar 23 21:45 .
-dr-xr-xr-x  18 root root  278 Mar 23 21:45 ..
--rw-r--r--   1 root root    0 Mar  9 20:49 .autorelabel
-lrwxrwxrwx   1 root root    7 Mar  8 00:46 bin -> usr/bin
-dr-xr-xr-x   4 root root 4096 Mar  8 00:47 boot
-drwxr-xr-x  15 root root 2900 Mar 23 21:36 dev
-drwxr-xr-x  81 root root 8192 Mar  9 20:49 etc
-drwxr-xr-x   3 root root   22 Mar  9 20:49 home
-lrwxrwxrwx   1 root root    7 Mar  8 00:46 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Mar  8 00:46 lib64 -> usr/lib64
-drwxr-xr-x   2 root root    6 Mar  8 00:46 local
-drwxr-xr-x   2 root root    6 Apr  9  2019 media
-drwxr-xr-x   2 root root    6 Apr  9  2019 mnt
-drwxr-xr-x   4 root root   27 Mar  8 00:47 opt
--rw-r--r--   1 root root   13 Mar 23 21:45 .private_file
-dr-xr-xr-x 161 root root    0 Mar 23 21:36 proc
-dr-xr-x---   3 root root  103 Mar  9 20:49 root
-drwxr-xr-x  28 root root  960 Mar 23 21:36 run
-lrwxrwxrwx   1 root root    8 Mar  8 00:46 sbin -> usr/sbin
-drwxr-xr-x   2 root root    6 Apr  9  2019 srv
-dr-xr-xr-x  13 root root    0 Mar 23 21:36 sys
-drwxrwxrwt   8 root root  172 Mar 23 21:36 tmp
-drwxr-xr-x  13 root root  155 Mar  8 00:46 usr
-drwxr-xr-x  19 root root  269 Mar  9 20:49 var
-```
-
-```
-[ec2-user@ip-172-31-44-146 /]$ nano .private_file
-```
-
+#question2b
 ```
 [ec2-user@ip-172-31-44-146 /]$ cat .private_file
 info bonjour
 ```
 
+#question2c
 ```
-[ec2-user@ip-172-31-44-146 /]$ sudo chmod 777 .private_file
+[ec2-user@ip-172-31-44-146 /]$ ls -la
+total 20
+```
+#question3a nothing 
+#question3b nothing
+
+#question 4a
+```
+[ec2-user@ip-172-31-44-146 /]$ sudo nano .private_file
 ```
 
+#question4b
 ```
-[ec2-user@ip-172-31-44-146 /]$ nano .private_file
-You have new mail in /var/spool/mail/ec2-user
-```
-
-#4.3
-
-```
-[ec2-user@ip-172-31-44-146 /]$ chmod a+rw .private_file
-chmod: changing permissions of ‘.private_file’: Operation not permitted
+[ec2-user@ip-172-31-44-146 /]$ cat .private_file
 ```
 
+#question5a
 ```
-[ec2-user@ip-172-31-44-146 /]$ sudo chown $USER .private_file
-```
-
-```
-[ec2-user@ip-172-31-44-146 /]$ chmod a+rw .private_file
+[ec2-user@ip-172-31-44-146 /]$ sudo chmod a+rwx .private_file
 ```
 
+#question5b
+```
+[ec2-user@ip-172-31-44-146 /]$ cat .private_file
+```
 
-#4.4
+#Exercice 4.3
 
+#question1
+```
+[ec2-user@ip-172-31-44-146 /]$ chmod 666 .private_file
+```
+
+#Question 2
+```
+[ec2-user@ip-172-31-44-146 /]$ chown $USER .private_file
+```
+
+
+
+#Exercice 4.4
+
+#question 1
 ```
 [ec2-user@ip-172-31-44-146 /]$ sudo apt update
 ```
 
+#question 2
 ```
 [ec2-user@ip-172-31-44-146 /]$ sudo apt upgrade
 ```
 
+#question 3
 ```
 [ec2-user@ip-172-31-44-146 /]$ sudo apt install cmatrix
 ```
 
+#question 4
 ```
 [ec2-user@ip-172-31-44-146 /]$ cmatrix 
+```
+
+#question 5
+```
 CTRL + C
 ```
 
+#question 6
 ```
 [ec2-user@ip-172-31-44-146 /]$ sudo apt install tmux
 ```
 
+#question 7
 ```
 [ec2-user@ip-172-31-44-146 /]$ tmux
+```
+
+
+#question 8
+```
 echo "Hello session 0"
 ```
 
+
+
+#question 9
 ```
-[ec2-user@ip-172-31-44-146 /]$ cmatrix
+cmatrix
 ```
 
+#question 10
+```
 Ctrl + B + D
-Ctrl + B + %
+```
 
-#14
+#question 11
+```
+Ctrl + B + %
+```
+
+#question14
 ```
 tmux list-sessions
 ```
 
+#question15
 ```
 tmux attach-session -t session0
 ```
 
--20
-
+#question20
 ```
 tmux kill-session -a
+```
+
+#question20
+```
 tmux list-sessions
 ```
 
 #ex 4.5
 
+#question 1
 ```
 cmatrix -h
 ```
 
 
+#question 2
+```
 cmatrix -C white
+```
+#question 3
+```
 cmatrix -s 5
+```
+
+#question 4
+
+```
 CTRL + C
+```
+
+#question 5
+```
 cmatrix -s 5 -C blue
+```
+
+#question 6
+```
 man cmatrix
+```
+
+#question 7
+```
 tmux -h
+```
+
+#question 8
+```
 man tmux
+```
 
-[ec2-user@ip-172-31-44-146 /]$
-[ec2-user@ip-172-31-44-146 /]$
-[ec2-user@ip-172-31-44-146 /]$
-[ec2-user@ip-172-31-44-146 /]$
-[ec2-user@ip-172-31-44-146 /]$
-[ec2-user@ip-172-31-44-146 /]$
-[ec2-user@ip-172-31-44-146 /]$
-[ec2-user@ip-172-31-44-146 /]$
-[ec2-user@ip-172-31-44-146 /]$
-[ec2-user@ip-172-31-44-146 /]$
-[ec2-user@ip-172-31-44-146 /]$
 
-#TD 2
 
-#1
+####TD 2
+#Exercice 1
+
+#question1
 
 ```
 sudo apt update && sudo apt upgrade
 ```
 
-#2
+#question2
 ```
 lsb_release -a
 ```
@@ -379,110 +461,111 @@ hostname
 
 
 #EX 2
-#1.
+#question 1.
 ```
 x="piri pimpin"
 ```
-#2.
+#question2.
 ```
 echo $x
 ```
-#3.
+#question3.
 ```
 x="$x piri pimpin"
 ```
-#4.
+#question4.
 ```
 mkdir my_programs && cd my_programs
 ```
-#5.
+#question5.
 ```
 echo "echo pilou pilou" > pilou
 ```
-#6.
+#question6.
 ```
 bash pilou
 ```
-#7.
+#question7.
 ```
 chmod +x pilou
 ```
-#8.
+#question8.
 ```
 ./pilou
 ```
 
-#9.
+#question9.
 ```
 echo $PATH
 ```
 
-#10.
+#question10.
 ```
 export PATH="$PATH:$(pwd)"
 ```
 
-#11.
+#question11.
 ```
 export PATH
 ```
 
-#12.
+#question12.
 ```
 cd ~
 ```
 
-#13.
+#question13.
 ```
 pilou
 ```
 
-#14.
+#question14.
 ```
 echo 'export PATH="$PATH:$(pwd)"' >> ~/.profile
 ```
 
-#15.
+#question15.
 ```
 bash
 pilou
 ```
 
-#Ex3
+##Exercice 3
 
-#1.
+#question1.
 
 ```
 touch say_hello.sh
 date +"%c - Hello" >> hellos.txt
 ```
 
-#2.
+#question2.
 
 ```
 chmod +x say_hello.sh
 ```
 
-#Ex4
-#1.
+##Exercice4
+
+#question1.
 ```
 mkdir hash_checksum
 ```
 
-#2.
+#question2.
 
 ```
 cd hash_checksum 
 touch .sensible_addresses .sensible_passwords
 ```
 
-#3.
+#question3.
 
 ```
 ls
 ```
 
-#4.
+#question4.
 
 ```
 echo '#!/bin/bash' > gentle_script.sh
@@ -491,366 +574,365 @@ chmod +x gentle_script.sh
 ```
 
 
-#5.
+#question5.
 
 ```
 ./gentle_script.sh
 ```
 
-#6.
+#question6.
 
 ```
 sha256sum gentle_script.sh > log_sha
 ```
 
-#7.
+#question7.
 
 ```
 echo 'rm -f .sensible*' >> gentle_script.sh
  ```
 
-#8.
+#question8.
 
 ```
 sha256sum gentle_script.sh >> log_sha
 ```
 
-#9.
+#question9.
 
 ```
 ./gentle_script.sh
 ```
 
-#10.
+#question10.
 
 ```
 ls
 ```
 
-#11.
+#question11.
 
 ```
 cat log_shat
 ```
 
-#Ex5
+##Exercice 5
 
-#1.
+#question1.
 ```
 sudo apt-get install qpdf
 ```
-#2.
+#question2.
 ```
 mkdir compress && cd compress
 ```
 
-#3.
+#question3.
 ```
 echo "Hello" > hello
 ```
 
-#4.
+#question4.
 ```
 zlib-flate -compress -level 1 < hello > hello.deflate && echo "hello $(wc -c < hello.deflate)" >> log_compress
 ```
 
-#5.
+#question5.
 ```
 yes Hello | head -1000 > hello_multiple
 ```
 
-#6.
+#question6.
 ```
 zlib-flate -compress -level 1 < hello_multiple > hello_multiple.deflate && echo "hello_multiple $(wc -c < hello_multiple.deflate)" >> log_compress
 ```
-#7.
+#question7.
 
 ```
 for i in $(seq 1 1000); do echo "Hello $i"; done > hello_multiple_i
 ```
 
-#8.
+#question8.
 ```
 zlib-flate -compress -level 1 < hello_multiple_i > hello_multiple_i.deflate && echo "hello_multiple_i $(wc -c < hello_multiple_i.deflate)" >> log_compress
 ```
-#9.
+#question9.
 ```
 cat log_compress
 ```
 
 
-#TD3
+###TD3
 
 #Ex1
-#1.
+#question1.
 ```
 ls -l /
 ```
-#2
+#question2
 ```
 ls -l / | grep bin
 ```
-#3
+#question3
 ```
 ls -l / | grep bin | awk '{print $5}'
 ```
-#4
+#question4
 ```
 ls -l / | grep bin | awk '{print $6, $7, $8}'
 ```
-#5
+#question5
 ```
 ls -l / | grep bin | awk '{print $8"-"$6"-"$7}'
 ```
 
-#Ex2 
-#1.
+#Exercice 2
+#question1.
 ```
 curl https ://en.wikipedia.org/wiki/List_of_cyberattacks > cyberattacks.txt
 ```
-#2
+#question2
 ```
 grep "meta" cyberattacks.txt
 ```
 
-#3
+#question3
 ```
 cat cyberattacks.txt | grep -oP "meta \w*=\"\w*"
 ```
 
-#4
+#question4
 ```
 grep -o -E "meta [[:alpha:]]+" cyberattacks.txt | cut -d' ' -f2
 ```
 
-#5
+#question5
 ```
 cat cyberattacks.txt | grep -P ’A cyberattack is’
 ```
 
 
-#6
+#question6
 ```
 cat cyberattacks.txt | grep -o -E "<title>.*</title>" | cut -d'>' -f2 | cut -d'-' -f1
 cat cyberattacks.txt | grep -P "(?=title).+(?<=/title)"
 ```
 
 #TD3 Git
-#1
+#question1
 ```
 git --version
 ```
-#2
+#question2
 ```
 git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
 ```
 
-#3
+#question3
 ```
 git config --list
 ```
 
 #Ex 2
 
-#1
+#question1
 ```
 git init
 ```
-#2
+#question2
 ```
 ls -la
 ```
 
-#3
+#question3
 ```
 git status
 ```
 
-#4
+#question4
 ```
 echo "# Test repository" > readme.md
 ```
 
-#5
+#question5
 ```
 git status
 ```
-#6
+#question6
 ```
 git add readme.md
 ```
-#7
+#question7
 ```
 git status
 ```
-#8
+#question8
 ```
 git commit -m "Add readme.md"
 ```
-#9
+#question9
 ```
 git status
 ```
-#10
+#question10
 ```
 git log
 ```
 
-#Ex3
-#1
+#Exercice 3
+#question1
 ```
 touch main.py functions.py
 ```
-#2
+#question2
 ```
 git status
 ```
-#3
+#question3
 ```
 git add main.py
 ```
-#4
+#question4
 ```
 git status
 ```
-#5
+#question5
 ```
 git commit -m "Add main.py"
 ```
-#6
+#question6
 ```
 git status
 ```
-#7
+#question7
 ```
 git add functions.py
 git commit -m "Add functions.py"
 ```
-#8
+#question8
 ```
 git status
 ```
-#9
+#question9
 ```
 git log
 ```
 
-#Ex 4
-
-#1
+#Exercice 4
+#question1
 ```
 touch requirements.txt .gitignore .private
 ```
-#2
+#question2
 ```
 git status
 ```
-#3
+#question3
 ```
 git add .
 ```
-#4
+#question4
 ```
 git status
 ```
-#5
+#question5
 ```
 git commit -m "Add requirements.txt, .gitignore, and .private"
 ```
-#6
+#question6
 ```
 git status
 ```
-#7
+#question7
 ```
 git log --oneline
 ```
 
 
-#Ex5
+#Exercice 5
 
-#1
+#question1
 ```
 touch temp.ipynb
 ```
-#2
+#question2
 ```
 git status
 ```
-#3
+#question3
 ```
 echo "temp.ipynb" >> .gitignore
 ```
-#4
+#question4
 ```
 git status
 ```
-#5
+#question5
 ```
 touch temp.aux temp.log
 ```
-#6
+#question6
 ```
 git status
 ```
-#7
+#question7
 ```
 echo "temp.*" > .gitignore
 ```
-#8
+#question8
 ```
 git status
 ```
-#9
+#question9
 ```
 echo ".private/" >> .git/info/exclude
 ```
-#Ex6
-#1
+#Exercice6
+#question1
 ```
 echo " test" >> readme.md
 ```
-#2
+#question2
 ```
 git add readme.md
 ```
-#3
+#question3
 
 ```
 git diff --staged
 ```
-#4
+#question4
 ```
 git commit -m "changee"
 ```
 
-#5
+#question5
 ```
 git diff
 ```
-#6
+#question6
 ```
 git diff
 ```
-#7
+#question7
 ```
 echo "test 2" > readme.md
 ```
-#8
+#question8
 ```
 git diff
 ```
-#Ex7
-#1
+#Exercice 7
+#question1
 ```
 rm -rf *
 ```
-#2
+#question2
 ```
 git checkout .
 ```
-#3
+#question3
 ```
 cd ..
 cp -R your_project your_project_backup
