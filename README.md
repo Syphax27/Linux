@@ -1,5 +1,10 @@
 # Linux
 
+DASHBOARD : http://35.180.111.251:8050/
+
+
+
+
 #Exercice 1 
 
 
