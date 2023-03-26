@@ -2,7 +2,20 @@
 
 DASHBOARD : http://35.180.111.251:8050/
 
-le dashboard 
+Le dashboard a ete réalisé en recuperant le prix de la cryptomonnaie Solana depuis le site www.gemini.com.
+J'ai recontré avec le choix de l'information dynamique, en effet
+j'avais tout d'abord opté pour un indice forex Gbp Usd cependant je me suis rendu compte que les marchés etaient ouverts seulement 5 jours sur 7 donc j'avais 
+des resultats constants le week end car le prix ne bougeait pas donc contraignant pour l'etude de mon projet,c'est pourquoi je me suis dirigé vers une info plus dynamique une crypto car il n'y a pas d'interruption.
+Un graphique est présent pour montrer l'evolution du prix du solana au cours du temps.Vous pouvez glisser selon l'axe des abscisses pour visualiser les informations anciennes ou recentes à votre guisee
+Un tableau recapitulatif de metriques est aussi présent pour indiquer differentes valeurs : 
+-le prix minimum, le prix maximum
+-le prix d'ouverture, le prix de cloture
+-la volatilite et les rendements
+Le dashboard recupere le prix du solana toutes les 5 min et affiche en conséquence ses informations relatives continuellement.
+Je n'ai pas réussi à actualiser correctement à 20h  le tableau recapitulatif, j'avais tenté une approche en prenant en compte un intervalle entre le jour précedent à 20h01 jusqu au jour d'apres à 19h59 pour afficher une actualisation du tableau mais par par contrainte technique je n'ai pas aboutit à cela mais il s'agissait d'une approche viable je pense.
+
+
+
 
 
 
