@@ -19,7 +19,7 @@ Je n'ai pas réussi à actualiser correctement à 20h  le tableau recapitulatif,
 
 
 
-
+## TD1_1 Linux 
 #Exercice 1 
 
 
@@ -447,7 +447,7 @@ man tmux
 
 
 
-####TD 2
+## TD_1_2_Linux
 #Exercice 1
 
 #question1
@@ -675,7 +675,7 @@ cat log_compress
 ```
 
 
-###TD3
+## TD_2_1Linux
 
 #Ex1
 #question1.
@@ -731,7 +731,31 @@ cat cyberattacks.txt | grep -o -E "<title>.*</title>" | cut -d'>' -f2 | cut -d'-
 cat cyberattacks.txt | grep -P "(?=title).+(?<=/title)"
 ```
 
-#TD3 Git
+
+
+## TD_2_3_Linux API
+#Ex1
+Exercice 1.1 :
+```
+curl https://opendomesday.org/api/1.0/county/
+curl https://opendomesday.org/api/1.0/place/2346/
+curl https://opendomesday.org/api/1.0/manor/181/
+```
+
+#Exercice 1.2.
+```
+curl -s 'https://opendomesday.org/api/1.0/county/' | jq '.[] | select(.name == "Derbyshire") | .places[]'
+```
+#Exercice 1.3 :
+```
+derbyshire_place_ids=$(curl -s 'https://opendomesday.org/api/1.0/county/' | jq '.[] | select(.name == "Derbyshire") | .places[]')
+for id in $derbyshire_place_ids; do
+  curl -s "https://opendomesday.org/api/1.0/place/${id}/" | jq '.manors[]'
+done
+```
+
+
+## TD3_Git
 #question1
 ```
 git --version
@@ -955,7 +979,7 @@ cd your_project
 
 
 
-#TD4 LINUX BRANCHES
+## TD4 LINUX BRANCHES
 #exo1
 ```
 git clone <repository URL>                                        
@@ -1041,23 +1065,3 @@ git rebase -i HEAD~8
 git push -u origin <your name>
 ``` 
  
-#TD Linux API
-#Ex1
-Exercice 1.1 :
-```
-curl https://opendomesday.org/api/1.0/county/
-curl https://opendomesday.org/api/1.0/place/2346/
-curl https://opendomesday.org/api/1.0/manor/181/
-```
-
-#Exercice 1.2.
-```
-curl -s 'https://opendomesday.org/api/1.0/county/' | jq '.[] | select(.name == "Derbyshire") | .places[]'
-```
-#Exercice 1.3 :
-```
-derbyshire_place_ids=$(curl -s 'https://opendomesday.org/api/1.0/county/' | jq '.[] | select(.name == "Derbyshire") | .places[]')
-for id in $derbyshire_place_ids; do
-  curl -s "https://opendomesday.org/api/1.0/place/${id}/" | jq '.manors[]'
-done
-```
